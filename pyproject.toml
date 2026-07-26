@@ -3,7 +3,7 @@ requires = ["setuptools>=80"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "recoverops-lab"
+name = "restore-verify"
 version = "1.0.0"
 description = "Automated PostgreSQL disaster-recovery rehearsal and evidence lab"
 readme = "README.md"

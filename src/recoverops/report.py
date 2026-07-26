@@ -36,7 +36,7 @@ def render_markdown(report: dict[str, Any]) -> str:
     recovery_status = report["services"]["recovery_api"]
     primary_result = "PASS" if primary_status == 503 else "FAIL"
     recovery_result = "PASS" if recovery_status == 200 else "FAIL"
-    return f"""# RecoverOps recovery evidence
+    return f"""# restore-verify recovery evidence
 
 **Outcome:** {report["outcome"]}
 

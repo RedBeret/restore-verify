@@ -13,7 +13,7 @@
 
 - name: Restore the latest verified snapshot
   block:
-    - name: Confirm the restore target is the RecoverOps recovery database
+    - name: Confirm the restore target is the recovery database
       ansible.builtin.command:
         cmd: >-
           {{ recoverops_root }}/.venv/bin/recoverctl assert-scope

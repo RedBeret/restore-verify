@@ -12,7 +12,7 @@
   register: database_seed_create
   changed_when: "'\"created\": true' in database_seed_create.stdout"
 
-- name: Apply the RecoverOps schema
+- name: Apply the schema
   ansible.builtin.command:
     cmd: >-
       docker exec recoverops-primary-db
@@ -21,7 +21,7 @@
   register: database_seed_schema
   changed_when: "'CREATE' in database_seed_schema.stdout"
 
-- name: Load the deterministic RecoverOps dataset
+- name: Load the deterministic dataset
   ansible.builtin.command:
     cmd: >-
       docker exec recoverops-primary-db

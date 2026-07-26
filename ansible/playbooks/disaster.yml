@@ -1,5 +1,5 @@
 ---
-- name: Inject a controlled RecoverOps database disaster
+- name: Inject a controlled database disaster
   hosts: localhost
   gather_facts: false
   roles:

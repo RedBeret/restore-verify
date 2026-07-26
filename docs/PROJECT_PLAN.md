@@ -1,8 +1,8 @@
-# RecoverOps Lab v1 plan
+# restore-verify v1 plan
 
 ## Product contract
 
-RecoverOps Lab is a local disaster-recovery rehearsal environment. It proves that a
+restore-verify is a local disaster-recovery rehearsal environment. It proves that a
 PostgreSQL backup is usable by restoring it into an isolated recovery database and
 comparing the recovered application state with evidence captured before backup.
 
@@ -62,7 +62,7 @@ bootstrap -> doctor -> up -> seed -> backup -> disaster --apply -> restore -> ve
 9. A modified restored dump is rejected before `pg_restore` runs.
 10. JSON reports parse, Markdown reports render, and RPO/RTO fields are present.
 11. Unit, contract, shell, Ansible syntax, and lint checks pass.
-12. The full live rehearsal passes and `down` leaves no RecoverOps containers running.
+12. The full live rehearsal passes and `down` leaves no lab containers running.
 
 ## Delivery stages
 

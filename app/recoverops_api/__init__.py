@@ -1,1 +1,1 @@
-"""HTTP health surface for the RecoverOps Lab."""
+"""HTTP health surface for restore-verify."""
