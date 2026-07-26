@@ -1,5 +1,5 @@
 ---
-- name: Restore the latest RecoverOps backup into isolation
+- name: Restore the latest backup into isolation
   hosts: localhost
   gather_facts: false
   roles:

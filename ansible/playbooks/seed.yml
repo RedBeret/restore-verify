@@ -1,5 +1,5 @@
 ---
-- name: Seed the RecoverOps source database
+- name: Seed the source database
   hosts: localhost
   gather_facts: false
   roles:

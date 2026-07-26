@@ -9,7 +9,7 @@
           --manifest artifacts/backup/manifest.json
       changed_when: false
 
-    - name: Confirm the destructive target is the RecoverOps primary database
+    - name: Confirm the destructive target is the primary database
       ansible.builtin.command:
         cmd: >-
           {{ recoverops_root }}/.venv/bin/recoverctl assert-scope
@@ -24,7 +24,7 @@
           --name disaster --status started
       changed_when: true
 
-    - name: Remove the primary RecoverOps database
+    - name: Remove the primary database
       ansible.builtin.command:
         cmd: >-
           docker exec recoverops-primary-db

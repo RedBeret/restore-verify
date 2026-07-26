@@ -10,7 +10,7 @@ from fastapi.responses import JSONResponse
 SERVICE_NAME = os.getenv("SERVICE_NAME", "unknown")
 DATABASE_URL = os.getenv("DATABASE_URL", "postgresql://recoverops@localhost/recoverops")
 
-app = FastAPI(title="RecoverOps Lab API", version="1.0.0")
+app = FastAPI(title="restore-verify API", version="1.0.0")
 
 
 def database_summary() -> dict[str, Any]:
@@ -31,7 +31,7 @@ def database_summary() -> dict[str, Any]:
 
 @app.get("/")
 def root() -> dict[str, str]:
-    return {"service": SERVICE_NAME, "project": "RecoverOps Lab"}
+    return {"service": SERVICE_NAME, "project": "restore-verify"}
 
 
 @app.get("/health", response_model=None)

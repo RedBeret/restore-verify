@@ -6,7 +6,7 @@ def test_root_identifies_project() -> None:
     response = TestClient(main.app).get("/")
 
     assert response.status_code == 200
-    assert response.json()["project"] == "RecoverOps Lab"
+    assert response.json()["project"] == "restore-verify"
 
 
 def test_health_returns_healthy_summary(monkeypatch) -> None:

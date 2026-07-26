@@ -1,11 +1,11 @@
-# RecoverOps Lab
+# restore-verify
 
-[![CI](https://github.com/RedBeret/recoverops-lab/actions/workflows/ci.yml/badge.svg)](https://github.com/RedBeret/recoverops-lab/actions/workflows/ci.yml)
-[![Recovery rehearsal](https://github.com/RedBeret/recoverops-lab/actions/workflows/rehearsal.yml/badge.svg)](https://github.com/RedBeret/recoverops-lab/actions/workflows/rehearsal.yml)
+[![CI](https://github.com/RedBeret/restore-verify/actions/workflows/ci.yml/badge.svg)](https://github.com/RedBeret/restore-verify/actions/workflows/ci.yml)
+[![Recovery rehearsal](https://github.com/RedBeret/restore-verify/actions/workflows/rehearsal.yml/badge.svg)](https://github.com/RedBeret/restore-verify/actions/workflows/rehearsal.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![Ansible](https://img.shields.io/badge/Ansible-2.19-EE0000?logo=ansible&logoColor=white)](requirements-dev.txt)
 
-RecoverOps Lab proves that a PostgreSQL backup can be restored. It creates a known
+restore-verify proves that a PostgreSQL backup can be restored. It creates a known
 dataset, captures its logical fingerprint, encrypts a database dump with restic,
 removes the source database after explicit approval, restores into an isolated target,
 and produces machine-readable and human-readable recovery evidence.

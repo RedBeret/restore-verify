@@ -1,5 +1,5 @@
 ---
-- name: Create and verify the RecoverOps backup
+- name: Create and verify the backup
   hosts: localhost
   gather_facts: false
   roles:

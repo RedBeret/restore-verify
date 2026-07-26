@@ -264,7 +264,7 @@ def command_test(_: argparse.Namespace) -> int:
 def build_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(
         prog="recoverctl",
-        description="Operate the RecoverOps disaster-recovery rehearsal lab.",
+        description="Operate the restore-verify disaster-recovery rehearsal lab.",
     )
     parser.add_argument("--version", action="version", version=f"%(prog)s {__version__}")
     subparsers = parser.add_subparsers(dest="command", required=True)
