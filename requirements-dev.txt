@@ -1,6 +1,6 @@
 ansible-core==2.19.11
 ansible-lint==26.6.0
-fastapi==0.140.0
+fastapi==0.141.1
 httpx2==2.9.1
 pytest==9.1.1
 PyYAML==6.0.3
