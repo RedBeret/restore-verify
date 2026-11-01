@@ -1,7 +1,7 @@
-ansible-core==2.19.13
-ansible-lint==26.9.0
-fastapi==0.142.2
-httpx2==2.13.1
-pytest==9.1.1
+ansible-core==2.19.14
+ansible-lint==26.10.1
+fastapi==0.162.0
+httpx2==2.16.0
+pytest==9.2.0
 PyYAML==6.0.3
-ruff==0.16.9
+ruff==0.17.3
